@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive 2-Column to 1-Column Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 20px; 
+      background-color: #f0f0f0; 
+    }
+    .container {
+      display: grid; 
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px; 
+    }
+    .card {
+      background-color: white;
+      padding: 20px; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr; 
+      }
+    }
+  </style>
+</head>
+<body>
+<h2>Responsive Layout Example</h2>
+<div class="container">
+  <div class="card">Column 1</div>
+  <div class="card">Column 2</div>
+  <div class="card">Column 3</div>
+  <div class="card">Column 4</div>
+</div>
+</body>
+</html>

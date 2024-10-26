@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Image Scale on Hover</title>
+  <style>
+    .image-container {
+      overflow: hidden; 
+      display: inline-block; 
+      border-radius: 10px; 
+    }
+    .image-container img {
+      width: 300px; 
+      transition: transform 0.3s ease;
+    }
+    .image-container:hover img {
+      transform: scale(1.1); 
+    }
+  </style>
+</head>
+<body>
+<h2>Image Scale on Hover</h2>
+<div class="image-container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyuk8V5XNzE8PpMb_TzLD12KrsC2cpUapQw&s" alt="Sample Image">
+</div>
+</body>
+</html>

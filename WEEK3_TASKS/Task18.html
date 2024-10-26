@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heading with Decorative Line</title>
+  <style>
+    h2 {
+      position: relative; 
+      font-size: 24px;
+      color: #333; 
+      margin-bottom: 20px; 
+    }
+    h2::after {
+      content: ""; 
+      display: block; 
+      width: 50%; 
+      height: 2px; 
+      background-color: #007BFF; 
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+<h2>Decorative Heading</h2>
+<p>This is some content below the heading.</p>
+</body>
+</html>

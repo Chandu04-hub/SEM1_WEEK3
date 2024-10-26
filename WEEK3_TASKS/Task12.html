@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+      gap: 10px; 
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+<h2>Simple Photo Gallery</h2>
+<div class="gallery">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyuk8V5XNzE8PpMb_TzLD12KrsC2cpUapQw&s" alt="Image 1">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZKq-b5mbMw_-VwC9xBtLwBAyxREKSGl0EVQ&s" alt="Image 2">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lvNvRmxsgBBInSUEaL5CwCXNvR6sfrFiIg&s" alt="Image 3">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7aiIqYwSNR3FlHmFviH8GoEY9atQsYPviw&s" alt="Image 4">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPCnjtYHR-JqDzR0UHJduZ_pHI9LveRmtYug&s" alt="Image 5"> 
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQiPbjlnXH4yC4sD6Cid0UKyY-rkFD1YjdCQ&s" alt="Image 6">
+</div>
+</body>
+</html>

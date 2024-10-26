@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Variables Example</title>
+  <style>
+    :root {
+      --primary-color: #3498db; 
+      --secondary-color: #2ecc71; 
+      --text-color: #ffffff; 
+    }
+    body {
+      margin: 0; 
+      font-family: Arial, sans-serif; 
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: var(--primary-color); 
+      color: var(--text-color); 
+      padding: 20px; 
+      text-align: center; 
+    }
+    main {
+      padding: 20px;
+    }
+    .button {
+      background-color: var(--secondary-color); 
+      color: var(--text-color); 
+      border: none; 
+      padding: 10px 20px; 
+      font-size: 1rem; 
+      cursor: pointer; 
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: darken(var(--secondary-color), 10%); 
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Welcome to My Website</h1>
+</header>
+<main>
+  <p>This website demonstrates the use of CSS variables for consistent styling.</p>
+  <button class="button">Click Me!</button>
+</main>
+
+</body>
+</html>

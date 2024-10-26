@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Theme Color Example</title>
+    <style>
+        :root {
+            --theme-color: #3498db; 
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: var(--theme-color); 
+        }
+        header {
+            background-color: var(--theme-color); 
+            padding: 20px;
+            text-align: center;
+            color: white; 
+        }
+        .button {
+            background-color: var(--theme-color); 
+            color: white; 
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to My Website</h1>
+</header>
+<main>
+    <p>This website demonstrates changing the theme color with a CSS variable.</p>
+    <button class="button" onclick="changeThemeColor('#e74c3c')">Change Theme Color</button>
+</main>
+<script>
+    function changeThemeColor(newColor) {
+        document.documentElement.style.setProperty('--theme-color', newColor);
+    }
+</script>
+</body>
+</html>

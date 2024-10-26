@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3-Column Blog Layout</title>
+  <style>
+    .blog-container {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    .sidebar, .main-content {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .sidebar {
+      background-color: #ddd;
+    }
+    .main-content {
+      background-color: #eaeaea;
+    }
+    @media (max-width: 768px) {
+      .blog-container {
+        grid-template-columns: 1fr; 
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="blog-container">
+  <div class="sidebar">
+    <h2>Left Sidebar</h2>
+    <p>Additional content, links, or navigation.</p>
+  </div>
+  <div class="main-content">
+    <h2>Main Blog Content</h2>
+    <p>This is the main content section where blog posts will appear.</p>
+  </div>
+  <div class="sidebar">
+    <h2>Right Sidebar</h2>
+    <p>Additional content, links, or ads.</p>
+  </div>
+</div>
+</body>
+</html>

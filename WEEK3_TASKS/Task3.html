@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000; 
+        }
+        .content {
+            padding-top: 70px; 
+        }
+        .main {
+            padding: 20px;
+            background-color: #f4f4f4;
+            height: 2000px; 
+        }
+        .header h1 {
+            font-size: 24px;
+        }
+    </style>
+    <title>Fixed Header Example</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Fixed Header</h1>
+    </div>
+    <div class="content">
+        <div class="main">
+            <h2>Main Content Starts Here</h2>
+            <p>Scroll down the page to see the fixed header in action. The header will remain at the top while you scroll through the content.</p>
+        </div>
+    </div>
+</body>
+</html>

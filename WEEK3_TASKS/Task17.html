@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button with Icon</title>
+  <style>
+    .button {
+      display: inline-flex; 
+      align-items: center; 
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #007BFF; 
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative; 
+      transition: background-color 0.3s; 
+    }
+    .button::before {
+      content: "🔍"; 
+      margin-right: 8px; 
+      font-size: 20px; 
+    }
+    .button:hover {
+      background-color: #0056b3; 
+    }
+  </style>
+</head>
+<body>
+<h2>Button with Icon</h2>
+<button class="button">Search</button>
+</body>
+</html>
